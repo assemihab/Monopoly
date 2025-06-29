@@ -1,0 +1,485 @@
+!<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monopoly Game</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="bg-success-subtle">
+    
+    <div class="monopolyBoard font-monospace lowsizyy">
+        
+      <div class="d-flex flex-wrap justify-content-center">
+        <input type="checkbox" id="jaill" hidden />
+        <div
+          class=" p-2 border text-center borderColor lowWidthy heighty text-center widthy d-flex flex-column jailblock"
+        >
+          <div class="p-2  ">
+            
+            <img src="jail.jpg" alt="Home Icon" width="80" height="80">
+            
+           </div>
+        </div>
+        <div
+          class="border text-center borderColor position-relative lowWidthy heighty d-flex flex-column"
+        >
+          <!-- Tile -->
+          <div class="flex-grow-1 pt-2 flipy2 money">1.4m</div>
+          <div class="p-2"></div>
+          <div class="flipy2">The angler islington</div>
+          <div class="border borderColor bgpink flipy2">tile</div>
+        </div>
+        <div
+          class="p-2 border text-center borderColor lowWidthy heighty flipy2"
+        >
+          <div>electric Company</div>
+          <div class="p-2"><i class="bi bi-lightbulb"></i></div>
+          <div class="money">1.4</div>
+        </div>
+        <div
+          class="border text-center borderColor position-relative lowWidthy heighty d-flex flex-column"
+        >
+          <!-- Tile -->
+          <div class="flex-grow-1 pt-2 flipy2 money">97m</div>
+          <div class="p-2"></div>
+          <div class="flipy2">Trafalgar Square</div>
+          <div class="border borderColor bgpink flipy2">tile</div>
+        </div>
+        <div
+          class="border text-center borderColor position-relative lowWidthy heighty d-flex flex-column"
+        >
+          <!-- Tile -->
+          <div class="flex-grow-1 pt-2 flipy2 money">87</div>
+          <div class="p-2"></div>
+          <div class="flipy2">Northcoast Avenue</div>
+          <div class="border borderColor bgpink flipy2">tile</div>
+        </div>
+        <label for=helheimbox >
+        <div
+          class="p-2 border text-center borderColor lowWidthy heighty flipy2 station"
+        >
+          <div>Helheim Station</div>
+          <div class="p-2"><i class="bi bi-train-freight-front-fill"></i></div>
+          <div class="money">56m</div>
+        </div>
+        </label>
+        <input type="checkbox" id="helheimbox" hidden />
+        <aside class="description">
+          <div class="p-2">This is a station tile.</div>
+          <div class="p-2">You can buy it for 56 €.</div>
+          <div class="p-2">You can build houses on it.</div>
+          <div class="p-2">You can charge rent to other players.</div>
+        </aside>
+        <div
+          class="border text-center borderColor position-relative lowWidthy heighty d-flex flex-column"
+        >
+          <!-- Tile -->
+          <div class="flex-grow-1 pt-2 flipy2 money">90m</div>
+          <div class="p-2"></div>
+          <div class="flipy2">M'bourogh Street</div>
+          <div class="border borderColor bgorange flipy2">tile</div>
+        </div>
+        <div
+          class="p-2 border text-center borderColor lowWidthy heighty flipy2"
+        >
+          <div>Community Chest</div>
+          <div class="p-2"><i class="bi bi-basket3"></i></i></div>
+        </div>
+        <div
+          class="border text-center borderColor position-relative lowWidthy heighty d-flex flex-column"
+        >
+          <!-- Tile -->
+          <div class="flex-grow-1 pt-2 flipy2 money">148m</div>
+          <div class="p-2"></div>
+          <div class="flipy2">Fleet Street</div>
+          <div class="border borderColor bgorange flipy2">tile</div>
+        </div>
+        <div
+          class="border text-center borderColor position-relative lowWidthy heighty d-flex flex-column"
+        >
+          <!-- Tile -->
+          <div class="flex-grow-1 pt-2 flipy2 money">208m</div>
+          <div class="p-2"></div>
+          <div class="flipy2">Old Kent Road</div>
+          <div class="border borderColor bgorange flipy2">tile</div>
+        </div>
+        <div
+          class=" p-2 border text-center borderColor lowWidthy heighty text-center widthy d-flex flex-column"
+        >
+          <div class="p-2 flipy25">
+            <div class="">electric<br> Company</div>
+            <img src="parking.png" alt="Home Icon" width="40" height="40">
+            <div class="money">1.4bn</div>
+           </div>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap justify-content-center">
+        
+        
+        <div class="p-0 border text-center borderColor widthy lowheighty d-flex flex-row-reverse align-items-center" >
+  
+
+            <div class=" border borderColor tile-box me-0 flipy1 shift10 w-50 sbcolor ">tile</div>
+            <div class="flipy1  ">wight chapelroad</div>
+            <div class="flipy1"></div>
+            <div class="flipy1 money ">81m</div>
+        </div>
+
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-0 border text-center borderColor widthy lowheighty d-flex flex-row align-items-center" >
+  
+
+            <div class=" border borderColor tile-box me-0 flipy1 shift-25 w-50 bgred ">tile</div>
+            <div class="flipy3  "> white<br> hall</div>
+            <div class="flipy3"></div>
+            <div class="flipy3 money">81m</div>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap justify-content-center">
+        <div class="p-0 border text-center borderColor widthy lowheighty d-flex flex-row-reverse align-items-center" >
+  
+
+            <div class=" border borderColor tile-box me-0 flipy1 shift20 w-50 sbcolor ">tile</div>
+            <div class="flipy2  ">Bow Street </div>
+            <div class="flipy1"></div>
+            <div class="flipy1 money">71m</div>
+        </div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-0 border text-center borderColor widthy lowheighty d-flex flex-row align-items-center" >
+
+            <div class="flipy3  ">Chance </div>
+            <i class="bi bi-question flipy3"></i>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap justify-content-center">
+        <div class="p-0 border text-center borderColor widthy lowheighty d-flex flex-row-reverse align-items-center" >
+
+            <div class="flipy1  ">Bow Street </div>
+            <i class="bi bi-question flipy1"></i>
+        </div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-0 border text-center borderColor widthy lowheighty d-flex flex-row align-items-center" >
+  
+
+            <div class=" border borderColor tile-box me-0 flipy1 shift-2 w-50 bgred ">tile</div>
+            <div class="flipy3  "> Pentoville<br> mall</div>
+            <div class="flipy3"></div>
+            <div class="flipy3 money">215m</div>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap justify-content-center">
+        <div class="p-0 border text-center borderColor widthy lowheighty d-flex flex-row-reverse align-items-center" >
+  
+
+            <div class=" border borderColor tile-box me-0 flipy1 shift20 w-50 sbcolor ">tile</div>
+            <div class="flipy1  ">lec square </div>
+            <div class="flipy1"></div>
+            <div class="flipy1 money">71m</div>
+        </div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-0 border text-center borderColor widthy lowheighty d-flex flex-row align-items-center" >
+  
+
+            <div class=" border borderColor tile-box me-0 flipy1 shift-25 w-50 bgred ">tile</div>
+            <div class="flipy3  "> Pall<br> mall</div>
+            <div class="flipy3"></div>
+            <div class="flipy3 money">215m</div>
+        </div>
+       </div>
+             <div class="d-flex flex-wrap justify-content-center">
+        <label for="marylebone">
+        <div class="p-0 border text-center borderColor widthy lowheighty d-flex flex-row-reverse align-items-center station" >
+
+            <div class="flipy1  ">marylebony <br>station </div>
+            <i class="bi bi-train-freight-front-fill flipy1"></i>
+            <div class="flipy1 money"> 500m </div>
+        </div>
+        </label>
+        <input type="checkbox" id="marylebone" hidden />
+        <aside class="description">
+          <div class="p-2">This is a station tile.</div>
+          <div class="p-2">You can buy it for €500m.</div>
+          <div class="p-2">You can build houses on it.</div>
+          <div class="p-2">You can charge rent to other players.</div>
+        </aside>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <label for="kingscross">
+        <div class="p-0 border text-center borderColor widthy lowheighty d-flex flex-row align-items-center station" >
+
+            <div class="flipy3  ">kingscross<br> station </div>
+            <i class="bi bi-train-freight-front-fill flipy3"></i>
+        </div>
+        </label>
+        <input type="checkbox" id="kingscross" hidden />
+        <aside class="description">
+          <div class="p-2">This is a station tile.</div>
+          <div class="p-2">You can buy it for €500m.</div>
+          <div class="p-2">You can build houses on it.</div>
+          <div class="p-2">You can charge rent to other players.</div>
+        </aside>
+
+      </div>
+      <div class="d-flex flex-wrap justify-content-center">
+        <div class="p-0 border text-center borderColor widthy lowheighty d-flex flex-row-reverse align-items-center" >
+
+            <div class="flipy1  ">Bow Street </div>
+            <i class="bi bi-question flipy1"></i>
+            <div class="flipy1">pay</div>
+            <div class="flipy1 money">100m </div>
+        </div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-0 border text-center borderColor widthy lowheighty d-flex flex-row align-items-center" >
+  
+
+            <div class=" border borderColor tile-box me-0 flipy1 shift-25 w-50 bgyellow ">tile</div>
+            <div class="flipy3  "> bond<br> street</div>
+            <div class="flipy3"></div>
+            <div class="flipy3 ">415m</div>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap justify-content-center">
+        
+        
+        <div class="p-0 border text-center borderColor widthy lowheighty d-flex flex-row-reverse align-items-center" >
+  
+
+            <div class=" border borderColor tile-box me-0 flipy1 shift10 w-50 brownbg ">tile</div>
+            <div class="flipy1  ">Coventry Strees</div>
+            <div class="flipy1"></div>
+            <div class="flipy1 money">81m</div>
+        </div>
+
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-0 border text-center borderColor widthy lowheighty d-flex flex-row align-items-center" >
+  
+
+            <div class=" border borderColor tile-box me-0 flipy1 shift-1 w-50 bgyellow ">tile</div>
+            <div class="flipy3  "> strand<br> </div>
+            <div class="flipy3"></div>
+            <div class="flipy3 money">320m</div>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap justify-content-center">
+        <div class="p-0 border text-center borderColor widthy lowheighty d-flex flex-row-reverse align-items-center" >
+
+            <div class="flipy1  ">community<br> Chest </div>
+            <i class="bi bi-question flipy1"></i>
+            
+        </div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-0 border text-center borderColor widthy lowheighty d-flex flex-row align-items-center" >
+
+            <div class="flipy3  ">water<br> works </div>
+            <img src="water.gif" class="flipy3" alt="Home Icon" width="50" height="50">
+            <div class="flipy3  money">320m </div>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap justify-content-center">
+        <div class="p-0 border text-center borderColor widthy lowheighty d-flex flex-row-reverse align-items-center" >
+  
+
+            <div class=" border borderColor tile-box me-0 flipy1 shift20 w-50 brownbg ">tile</div>
+            <div class="flipy1  ">vene Street </div>
+            <div class="flipy1"></div>
+            <div class="flipy1 money">71m</div>
+        </div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-2 border invisible lowWidthy">Tile</div>
+        <div class="p-0 border text-center borderColor widthy lowheighty d-flex flex-row align-items-center" >
+  
+
+            <div class=" border borderColor tile-box me-0 flipy1 shift-20 w-50 bgyellow ">tile</div>
+            <div class="flipy3  "> Regent<br>street </div>
+            <div class="flipy3"></div>
+            <div class="flipy3 money">370m</div>
+        </div>
+        </div>
+      <div class="d-flex flex-wrap justify-content-center">
+        <div
+          class=" p-2 border text-center borderColor lowWidthy heighty text-center widthy d-flex flex-column"
+        >
+          <div class="p-2 flipy45">
+
+            <img src="salary.jpg" alt="Home Icon" width="50" height="50">
+
+           </div>
+        </div>
+        <div
+          class="border text-center borderColor position-relative lowWidthy heighty flipy2 d-flex flex-column"
+        >
+          <!-- Tile -->
+          <div class="flex-grow-1 pt-2 money flipy2">1.4bn</div>
+          <div class="p-2"></div>
+          <div class="flipy2">mayfair</div>
+          <div class="border borderColor bgblue flipy2">tile</div>
+        </div>
+        <div
+          class="p-2 border text-center borderColor lowWidthy heighty  justify-content-center"
+        >
+          <div>Huge Tax
+          <img src="ring.png" alt="Home Icon" width="40" height="40" class="justify-content-center">
+          <div class="money">100m</div>
+        </div>
+        </div>
+        <div
+          class="border text-center borderColor position-relative lowWidthy heighty d-flex flex-column flipy2"
+        >
+          <!-- Tile -->
+          <div class="flex-grow-1 pt-2 flipy2 money"> 568</div>
+          <div class="p-2"></div>
+          <div class="flipy2">Park Lane</div>
+          <div class="border borderColor bgblue flipy2">tile</div>
+        </div>
+        <div
+          class="p-2 border text-center borderColor lowWidthy heighty "
+        >
+          <div>Chance</div>
+          <div class="p-2"><i class="bi bi-question"></i></div>
+          <div></div>
+        </div>
+        <label for="liverpool">
+        <div
+          class="p-2 border text-center borderColor lowWidthy heighty station "
+        >
+          <div>liverpool Station</div>
+          <div class="p-2"><i class="bi bi-train-freight-front-fill"></i></div>
+          <div class="money"> 1.5bn</div>
+        </div>
+        </label>
+        <input type="checkbox" id="liverpool" hidden />
+        <aside class="description">
+          <div class="p-2">This is a station tile.</div>
+          <div class="p-2">You can buy it for €1.5bn.</div>
+          <div class="p-2">You can build houses on it.</div>
+          <div class="p-2">You can charge rent to other players.</div>
+        </aside>
+        <div
+          class="border text-center borderColor position-relative lowWidthy heighty d-flex flex-column flipy2"
+        >
+          <!-- Tile -->
+          <div class="flex-grow-1 pt-2 flipy2 money">1.7BN</div>
+          <div class="p-2"></div>
+          <div class="flipy2">Oxford Street</div>
+          <div class="border borderColor bggreen flipy2">tile</div>
+        </div>
+        <div
+          class="p-2 border text-center borderColor lowWidthy heighty "
+        >
+          <div>Community Chest</div>
+          <div class="p-2"><i class="bi bi-basket3"></i></i></div>
+        </div>
+        <div
+          class="border text-center borderColor position-relative lowWidthy heighty d-flex flex-column flipy2"
+        >
+          <!-- Tile -->
+          <div class="flex-grow-1 pt-2 flipy2 money"> 400m</div>
+          <div class="p-2"></div>
+          <div class="flipy2">Picadilly</div>
+          <div class="border borderColor bggreen flipy2">tile</div>
+        </div>
+        <div
+          class="border text-center borderColor position-relative lowWidthy heighty d-flex flex-column flipy2"
+         >
+          <!-- Tile -->
+          <div class="flex-grow-1 pt-2 flipy2 money">404</div>
+          <div class="p-2"></div>
+          <div class="flipy2">Boston road</div>
+          <div class="border borderColor bggreen flipy2">tile</div>
+        </div>
+        <div
+          class=" p-2 border text-center borderColor lowWidthy heighty text-center widthy d-flex flex-column"
+        >
+          <div class="p-2 flipy315">
+            <label for="jaill">
+            <img src="jail.png" alt="Home Icon" width="80" height="80">
+            </label>
+            
+           </div>
+        </div>
+      </div>
+      <img src="logo.png" class="position-absolute top-50 start-50 logo img-fluid d-none d-md-block" style="width: 300px; height: auto;" alt="Board Center" />
+</div>
+    </div>
+  </body>
+</html>

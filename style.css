@@ -1,0 +1,150 @@
+:root {
+  --pink-color: #de3cbe;
+  --orange-color: #f39c12;
+  --skyblue-color: #00aaff;
+  --brown-color: #8b4513;
+  --red-color: #ff0000;
+  --green-color: #00ff00;
+  --blue-color: #0000ff;
+  --yellow-color: #ffff00;
+}
+.brownbg {
+  background-color: var(--brown-color);
+}
+.sbcolor {
+  background-color: var(--skyblue-color);
+}
+.borderColor {
+  border-color: #000000 !important;
+}
+.lowheighty {
+  height: 3.5rem;
+}
+.heighty {
+  height: 7rem;
+}
+.lowWidthy {
+  width: 3.5rem;
+}
+.widthy {
+  width: 7rem;
+}
+.bgpink {
+  background-color: var(--pink-color);
+}
+.bgorange {
+  background-color: var(--orange-color);
+}
+.flexy {
+  flex-grow: 0.5 rem;
+}
+.flipy2 {
+  transform: rotate(180deg);
+}
+.flipy25 {
+  transform: rotate(225deg);
+  transform-origin: center center;
+}
+.flipy1 {
+  transform: rotate(90deg);
+}
+.flipy3 {
+  transform: rotate(270deg);
+}
+
+.lowsizyy {
+  font-size: 0.5rem;
+  text-align: center;
+}
+.shift10 {
+  transform: translate(15px) rotate(90deg) scalex(1.4);
+}
+.shift20 {
+  transform: translate(21px) rotate(90deg) scalex(1.07);
+}
+.shift-1 {
+  transform: translate(-20.5px) rotate(90deg) scalex(1);
+}
+.shift-2 {
+  transform: translate(-16px) rotate(90deg) scalex(1.25);
+}
+.shift-5 {
+  transform: translate(-18px) rotate(90deg) scalex(1.15);
+}
+.shift-10 {
+  transform: translate(-15px) rotate(90deg) scalex(1.4);
+}
+.shift-20 {
+  transform: translate(-21px) rotate(90deg) scalex(1.07);
+}
+.shift-25 {
+  transform: translate(-21px) rotate(90deg) scalex(1.03);
+}
+.shift-30 {
+  transform: translate(-25px) rotate(90deg) scalex(1.09);
+}
+.flipy315 {
+  transform: rotate(315deg);
+  transform-origin: center center;
+}
+.flipy45 {
+  transform: rotate(90deg);
+  transform-origin: center center;
+}
+.logo {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+i {
+  font-size: 1.5rem; /* or 24px, 150%, etc. */
+}
+.jailblock {
+  transition: 0.3s;
+}
+#jaill:checked ~ .jailblock {
+  background-color: var(--red-color);
+}
+.bgblue {
+  background-color: var(--blue-color);
+}
+.bggreen {
+  background-color: var(--green-color);
+}
+.bgred {
+  background-color: var(--red-color);
+}
+.bgyellow {
+  background-color: var(--yellow-color);
+}
+.station:hover {
+  transform: scale(1.1);
+}
+.description {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #ecf0f1;
+  border-left: 5px solid #3498db;
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+#helheimbox:checked ~ .description {
+  display: block;
+}
+#marylebone:checked ~ .description {
+  display: block;
+}
+#liverpool:checked ~ .description {
+  display: block;
+}
+#kingscross:checked ~ .description {
+  display: block;
+}
+.money::before {
+  content: "€";
+  font-size: 0.5rem;
+  /* margin-right: rem; */
+}
